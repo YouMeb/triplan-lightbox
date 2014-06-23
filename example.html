@@ -1,0 +1,48 @@
+<html>
+<head>
+  <style>
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      font-size: 1.4rem;
+    }
+  </style>
+  <link rel="stylesheet" href="build/build.css"></link>
+</head>
+<body>
+  <script src="build/build.js"></script>
+  <script>
+    var LightBox = require('triplan-lightbox');
+    var lightbox = new LightBox();
+
+    document.body.appendChild(lightbox.el);
+
+    lightbox.content.innerHTML = ''
+      + '<h3 class="lightbox-title">註冊會員</h3>'
+      + '<p>馬上註冊成為會員，<br />立即開始規劃你的旅遊。</p>'
+      + '<form>'
+        + '<input type="text" placeholder="暱稱" />'
+
+        + '<input type="text" placeholder="姓名" />'
+
+        + '<input type="email" placeholder="E-Mail" />'
+
+        + '<input type="password" placeholder="設定密碼" />'
+
+        + '<input type="password" placeholder="確認密碼" />'
+
+        + '<div class="lightbox-form-select">'
+          + '<select>'
+            + '<option>Taiwan</option>'
+          + '</select>'
+        + '</div>'
+
+        + '<p><input type="checkbox" /> 我願意接收最新資訊</p>'
+      + '</form>';
+
+    lightbox.open();
+  </script>
+</body>
+</html>

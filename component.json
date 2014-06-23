@@ -1,0 +1,20 @@
+{
+  "name": "triplan-lightbox",
+  "description": "triplan basic lightbox",
+  "version": "0.0.0",
+  "dependencies": {
+    "youmeb/lightbox": "*"
+  },
+  "development": {},
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [
+    "lib/style.css"
+  ],
+  "images": [
+    "images/close.png",
+    "images/down.png"
+  ]
+}
